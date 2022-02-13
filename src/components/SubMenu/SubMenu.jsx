@@ -15,7 +15,7 @@ function SubMenu({ item, sidebar }) {
         onClick={item.subNav && showSubnav}
       >
         <span className="link__icon">{item.icon}</span>
-        {item.notice && sidebar && <div className="link__notice-wrap" />}
+        {item.notice && sidebar && <span className="link__notice-wrap" />}
         <span className="link__label">{item.title}</span>
         {item.notice && <span className="link__notice" />}
       </NavLink>
