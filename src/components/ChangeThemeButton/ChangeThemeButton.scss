@@ -1,0 +1,30 @@
+.theme-button {
+  position: fixed;
+  width: 20%;
+  top: 3%;
+  right: 5%;
+
+  button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+    outline: none;
+    border: none;
+    line-height: 0;
+    color: #fff;
+    background: #27272a;
+    border-radius: 4px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+
+    span {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

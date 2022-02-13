@@ -1,0 +1,81 @@
+.user-profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 0 0;
+  padding: 24px;
+  background: #f4f4f5;
+  transition: all 0.2s linear;
+
+  svg {
+    animation: fade-in 1s ease-in-out;
+    cursor: pointer;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__avatar {
+    position: relative;
+    width: 40px;
+    height: 40px;
+
+    img {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__circle {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    background: #22c55e;
+  }
+
+  &__info {
+    padding: 0 0 0 16px;
+    animation: fade-in 1s ease-in-out;
+  }
+
+  h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    white-space: nowrap;
+    color: #3f3f46;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #71717a;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}

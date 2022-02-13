@@ -1,0 +1,83 @@
+@import url("./fonts/fonts.css");
+
+:root {
+  --background-menu: #18181b;
+  --background-header: #27272a;
+  --color-border: #3f3f46;
+  --color-logo: #fff;
+  --color-bg-link: #3f3f46;
+  --color-link: #a1a1aa;
+  --color-input: #71717a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.home,
+.projects,
+.incoming,
+.tasks,
+.activity,
+.team {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  background: #7c3aed;
+}
+
+.layout {
+  min-width: 320px;
+
+  &.dark {
+    .nav-menu {
+      background: var(--background-menu);
+    }
+
+    .nav-header {
+      background: var(--background-header);
+    }
+
+    .nav-header__logo svg path {
+      fill: var(--color-logo);
+    }
+
+    .menu-list__input input {
+      color: var(--color-input);
+      border: 1px solid var(--color-border);
+      background: inherit;
+    }
+
+    .link__top-link.active {
+      color: var(--color-link);
+      background: var(--color-bg-link);
+    }
+
+    .user-profile {
+      background: var(--background-header);
+    }
+
+    .menu-list__border {
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .menu-list__border_none {
+      border-bottom: none;
+    }
+
+    .user-profile h3 {
+      color: var(--color-logo);
+    }
+
+    .theme-button button {
+      color: #27272a;
+      background: var(--color-logo);
+      transition: all 0.2s linear;
+    }
+  }
+}
